@@ -1,0 +1,121 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"/>
+    <link href="styles.css"/>
+    </head>
+    <body>
+      <nav id="navbar" class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#welcome-section">About</a>
+            </li>
+            <li>
+              <a href="#projects">Work</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+                </li>
+                </ul>
+                </nav>
+        <section id="welcome-section" class="welcome-section">
+          <h1>My name is Chris Jarisch</h1>
+            <p>and I am a computer programming student</p>
+            </section>
+            <section id="projects" class="projects-section">
+              <h2 class="projects-section-header">These are some of my projects</h2>
+              <div class="projects-grid">
+                <a href="https://github.com/ChrisJarisch/freeCodeCamp-Tribute-Page/blob/main/build-a-tribute-page.txt"
+                target="blank"
+                class="project project-tile"
+                class-"project project-title">
+                <img class="project-image"
+                src="https://i0.wp.com/rayhaber.com/wp-content/uploads/2022/06/Adolphe-Sax-Saksofonun-Patentini-Aldi.jpg?resize=678%2C381&ssl=1"
+                alt="project"
+                />
+                <p class="project-title">Tribute Page</p>
+                </a>
+                 <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+         <h2>Contact...</h2>
+         </div>
+      <div class="contact-links">
+         <a
+          id="profile-link"
+          href="https://github.com/freecodecamp"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+        </div>
+      </body>
+      </html>
+
+** end of undefined **
+
+** start of undefined **
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--main-red);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+  .nav {
+    justify-content: center;
+  }
+  .welcome-section > p {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
+}
+.projects-section {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: var(--main-blue);
+}
+
+.projects-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid var(--main-white);
+}
+
+@media (max-width: 28.75em) {
+  .projects-section-header {
+    font-size: 4rem;
+  }
+}
+.project {
+  background: var(--main-gray);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.project-title {
+  font-size: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+** end of undefined **
+
